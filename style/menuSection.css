@@ -1,0 +1,37 @@
+.main .restaurant-menu-section{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+}
+.main .menu-category-section{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 50px;
+}
+.main .menu-category-section .menu-category-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: 0 0 3px rgba(10, 10, 10, .4);
+    padding: 10px;
+}
+.main .menu-category-section .menu-category-wrapper .menu-image{
+    width: 100%;
+    border-radius: 7px;
+}
+.main .menu-category-section .menu-category-wrapper .menu-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.main .menu-category-section .menu-category-wrapper .menu-content h3{
+    color: var(--primary);
+    font-weight: 500;
+    margin: 10px 0;
+}
+.main .menu-category-section .menu-category-wrapper .menu-content p{
+    color: #002705;
+}
+.main .menu-category-section .menu-category-wrapper .menu-price{
+    color: var(--primary);
+    display: flex;
+    /* flex-direction: ; */
+}

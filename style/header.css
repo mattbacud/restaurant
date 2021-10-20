@@ -1,0 +1,123 @@
+.main .header-section{
+    /* height: 100vh; */
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.main .header-section .nav-main{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.main .header-section .nav-main .logo-container{
+    flex: 1;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.main .header-section .nav-main .nav-container{
+    display: flex;
+    align-items: center;
+}
+.main .header-section .nav-main .nav-icons{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.main .header-section .nav-main .nav-icons img{
+    width: 50%;
+}
+
+/* .main .header-section .nav-main .nav-icons li span{
+    display: block;
+    background-color: #00C41A;
+    height: 20px;
+    width: 2px;
+    margin: 0 2px;
+} */
+.main .header-section .nav-main .nav-container li a{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .header-section .nav-main .nav-container li a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    transform: scale(0, 1);
+    transition: transform 200ms ease-in;
+    /* transform-origin: left; */
+}
+.main .header-section .nav-main .nav-container li a:hover::after{
+    transform: scale(1, 1);
+}
+
+/* End of Navigation */
+
+.main .hero-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.main .hero-main .hero-text-section{
+    background-color: #ECF9E4;
+    display: flex;
+    max-height: 400px;
+    min-height: 400px;
+    /* height: 500px; */
+    justify-content: center;
+    /* align-items: flex-end; */
+    flex-direction: column;
+    /* margin-bottom: 0; */
+    /* flex: 1; */
+    /* align-items: center; */
+    text-align: right;
+    padding: 0 20px;
+}
+.main .hero-main .hero-text-section h3{
+    color: var(--primary);
+    font-weight: 200;
+    font-size: 30px;
+}
+.main .hero-main .hero-text-section h1{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.main .hero-main .hero-text-section p{
+    color: #002705;
+    padding-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main .hero-main .hero-text-section button{
+    background-color: #72CB4B;
+    border: none;
+    width: 170px;
+    padding: 15px 20px;
+    align-self: flex-end;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.main .hero-main .hero-text-section button a{
+    color: #fff;
+}
+
+/* .main .hero-main .hero-image-section{
+    height: auto;
+} */
+.main .hero-main .hero-image-section img{
+    object-fit: cover;
+    max-height: 400px;
+    min-height: 400px;
+    /* height: 400px; */
+    width: 100%;
+}
+
