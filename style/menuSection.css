@@ -1,6 +1,7 @@
 .main .restaurant-menu-section{
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto
+    ;
 }
 .main .restaurant-menu-section .menu-category-section{
     display: flex;
@@ -62,4 +63,23 @@
     color: #fff;
     border: none;
     padding: 10px;
+}
+.main .restaurant-menu-section .button-browse-more{
+    display: flex;
+    flex-direction: row ;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.main .restaurant-menu-section .button-browse-more button{
+    padding: 15px;
+    width: 30%;
+    background-color: #72CB4B;
+    border: none;
+    border-radius: 3px;
+    color:#fff;
+    /* margin-right: -150px!important; */
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
 }
