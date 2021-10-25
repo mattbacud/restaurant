@@ -2,6 +2,13 @@
 @import url('header.css');
 @import url('menuSection.css');
 @import url('fontawesome-free-5.15.4-web/css/all.css');
+/* @import url('HelloKetta-d99oX.woff'); */
+@font-face {
+    font-family: 'Hello Ketta Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hello Ketta Regular'), url('HelloKetta-d99oX.woff') format('woff');
+    }
 /* variables */
 :root{
     --primary: #298F00;
