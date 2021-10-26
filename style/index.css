@@ -37,6 +37,92 @@ h1,h2,h3,h4,h5,h6,p{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: repeat(6, 1fr);
+    /* grid-auto-rows: 1fr; */
+    /* position: relative; */
+}
+
+.main .nav-main{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    height: 100px;
+    grid-row: 1/2;
+}
+.main .nav-main .logo-container{
+    flex: 1;
+    /* margin-top: 60px;
+    margin-left: 50px; */
+    /* position: relative; */
+}
+.main .nav-main .logo-container img{
+     margin-top: -30px;
+    margin-left: 50px;
+    position: absolute;
+}
+.main .nav-main .nav-container{
+    display: flex;
+    align-items: center;
+}
+.main .nav-main .nav-icons{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.main .nav-main .nav-icons img{
+    width: 50%;
+}
+
+/* .main .header-section .nav-main .nav-icons li span{
+    display: block;
+    background-color: #00C41A;
+    height: 20px;
+    width: 2px;
+    margin: 0 2px;
+} */
+.main .nav-main .nav-container li a{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .nav-main .nav-container li a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    transform: scale(0, 1);
+    transition: transform 200ms ease-in;
+    /* transform-origin: left; */
+}
+.main .nav-main .nav-container li a:hover::after{
+    transform: scale(1, 1);
+}
+
+/* End of Navigation */
+
+@media (max-width:320px) {
+    .main .nav-main{
+        margin: 0 !important;
+        flex-direction: column;
+        align-items: none;
+        /* position: relative; */
+        height: auto !important;
+    }
+    .main .nav-main .logo-container{
+       /* height: 100px; */
+       flex: none;
+       width: 100%;
+    }
+    .main .nav-main .logo-container img{
+      width: 100%;
+      /* object-fit: cover; */
+      position: relative;
+      margin: 0 !important;
+    }
 }
