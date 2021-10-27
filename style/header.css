@@ -10,11 +10,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    background-color: #ECF9E4;
 }
 .main .hero-main .hero-text-section{
-    background-color: #ECF9E4;
     display: flex;
-    max-height: 400px;
+    /* max-height: 400px; */
     min-height: 400px;
     /* height: 500px; */
     justify-content: center;

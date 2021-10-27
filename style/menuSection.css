@@ -98,7 +98,7 @@
     align-items: center;
     justify-content: center;
     min-height: 400px;
-    max-height: 400px;
+    /* max-height: 400px; */
     background-color: rgba(10, 10, 10, 0.5);
 }
 .services-section h1{
