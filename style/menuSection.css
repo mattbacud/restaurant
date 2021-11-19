@@ -102,17 +102,19 @@
     background-color: rgba(10, 10, 10, 0.5);
 }
 .services-section h1{
-    font-family: 'Hello Ketta Regular';
+    /* font-family: 'Kristi'; */
     margin-top: 40px;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 200;
-    color: #fff;
+    color: rgb(255, 208, 0);
+    word-spacing: 3px;
+    letter-spacing: 7px;
 }
 .services-section h5{
     /* margin-top: 40px; */
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
-    color: rgb(255, 208, 0);
+    color: #fff;
 }
 .services-section button{
     padding: 15px;
