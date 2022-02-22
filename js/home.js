@@ -30,7 +30,7 @@ function stickyElement(){
     if(window.scrollY >= sticky + 10){
         menuToFixed.classList.add('sticky');
         menuSmooth.style.marginTop = "50px"
-        
+
         if(window.scrollY > browseMenu.offsetTop-100){
             menuToFixed.classList.remove('sticky');
             menuSmooth.style.marginTop = "0"
@@ -42,16 +42,16 @@ function stickyElement(){
     }
 
 
-    if(window.scrollY > 80){
-        logoContainer.style.position='fixed'
-        logoContainer.style.bottom='60'
-        logoContainer.style.right='27%'
-    }
-    else{
-        logoContainer.style.position='relative'
-        logoContainer.style.bottom='0'
-        logoContainer.style.right='0'
-    }
+    // if(window.scrollY > 80){
+    //     logoContainer.style.position='fixed'
+    //     logoContainer.style.bottom='60'
+    //     logoContainer.style.right='27%'
+    // }
+    // else{
+    //     logoContainer.style.position='relative'
+    //     logoContainer.style.bottom='0'
+    //     logoContainer.style.right='0'
+    // }
     
     // console.log(`${browseMenu.offsetTop}----${window.scrollY}`)
 }
