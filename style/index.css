@@ -19,6 +19,8 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto' , sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin: 100px;
 }
 /* default properties */
 ul{
@@ -58,6 +60,7 @@ h1,h2,h3,h4,h5,h6,p{
     /* margin-top: 60px;
     margin-left: 50px; */
     /* position: relative; */
+    transition: right 300ms;
 }
 .main .nav-main .logo-container img{
      margin-top: -30px;
@@ -118,7 +121,6 @@ h1,h2,h3,h4,h5,h6,p{
         margin: 0 !important;
         flex-direction: column;
         align-items: flex-start;
-        /* position: relative; */
         height: auto !important;
         background: #0f3200;
         box-shadow: 10px 10px 3px #333;
@@ -145,13 +147,36 @@ h1,h2,h3,h4,h5,h6,p{
         /* position: absolute; */
     }
     .main .nav-main .nav-container{
-        display: none;
+        /* display: flex; */
         position: absolute;
+        top: 31%;
+        z-index: 11;
+        background: #298f00;
+        color: #333!important;
+        width: 100%;
+        text-align: left!important;
+        display: none;
     }
+    .main .nav-main .nav-container li a{
+        color: rgb(245, 255, 232)!important;
+        font-weight: 100;
+        padding: 10px 10px;
+        align-items: flex-start;
+        border-bottom: 1px solid #318111;
+    }
+    .main .nav-main .nav-container li:nth-child(even){
+        background: #2c8509;
+    }
+    /* .show{
+        display: block;
+    } */
     .main .nav-main .nav-icons{
         align-self: flex-end;
         margin-top: -30px;
         padding: 10px 0;
+    }
+    .nav-main :nth-child(4){
+        order: 2;
     }
     .main .nav-main .nav-icons img{
         max-width: 50%;
@@ -295,6 +320,7 @@ h1,h2,h3,h4,h5,h6,p{
          font-weight: 200;
          line-height: 25px;
          margin: 5px;
+         padding: 0 20px;
      }
      .events-text .events-text-announce h1{
         color: var(--primary);
